@@ -1,0 +1,73 @@
+{
+    "title": "Configuration Classic",
+    "comment": "The files are sorted by general type",
+    "folders": [
+        {
+            "path": "Images",
+            "content": "Images",
+            "extensions": [
+                ".jpg",
+                ".jpeg",
+                ".jpe",
+                ".jif",
+                ".jfif",
+                ".jfi",
+                ".png",
+                ".gif",
+                ".webp",
+                ".raw",
+                ".arw",
+                ".cr2",
+                ".nrw",
+                ".k25",
+                ".bmp",
+                ".dib"
+            ]
+        },
+        {
+            "path": "Vector_images",
+            "content": "Vectors Images",
+            "extensions": [
+                ".svg",
+                ".svgz",
+                ".ai",
+                ".eps"
+            ]
+        },
+        {
+            "path": "Documents",
+            "content": "Documents",
+            "extensions": [
+                ".docx",
+                ".doc",
+                ".odt",
+                ".xls",
+                ".xlsx",
+                ".ods",
+                ".txt"
+            ]
+        },
+        {
+            "path": "Videos",
+            "content": "Vid\u00e9os",
+            "extensions": [
+                ".webm",
+                ".mpeg",
+                ".mov",
+                ".flv"
+            ]
+        },
+        {
+            "path": "Musics",
+            "content": "Musics",
+            "extensions": [
+                ".mp3",
+                ".flac",
+                ".wma",
+                ".aac",
+                ".wav"
+            ]
+        }
+    ],
+    "mode": "modified"
+}

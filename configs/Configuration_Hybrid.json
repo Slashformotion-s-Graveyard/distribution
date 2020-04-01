@@ -1,0 +1,259 @@
+{
+    "title": "Configuration Hybrid",
+    "comment": "All the files are first sorted by general type then by specific extension",
+    "folders": [
+        {
+            "path": "Images/Jpg",
+            "content": "jpg files",
+            "extensions": [
+                ".jpg"
+            ]
+        },
+        {
+            "path": "Images/Jpeg",
+            "content": "jpeg files",
+            "extensions": [
+                ".jpeg"
+            ]
+        },
+        {
+            "path": "Images/Jpe",
+            "content": "jpe files",
+            "extensions": [
+                ".jpe"
+            ]
+        },
+        {
+            "path": "Images/Jif",
+            "content": "jif files",
+            "extensions": [
+                ".jif"
+            ]
+        },
+        {
+            "path": "Images/Jfif",
+            "content": "jfif files",
+            "extensions": [
+                ".jfif"
+            ]
+        },
+        {
+            "path": "Images/Jfi",
+            "content": "jfi files",
+            "extensions": [
+                ".jfi"
+            ]
+        },
+        {
+            "path": "Images/Png",
+            "content": "png files",
+            "extensions": [
+                ".png"
+            ]
+        },
+        {
+            "path": "Images/Gif",
+            "content": "gif files",
+            "extensions": [
+                ".gif"
+            ]
+        },
+        {
+            "path": "Images/Webp",
+            "content": "webp files",
+            "extensions": [
+                ".webp"
+            ]
+        },
+        {
+            "path": "Images/Raw",
+            "content": "raw files",
+            "extensions": [
+                ".raw"
+            ]
+        },
+        {
+            "path": "Images/Arw",
+            "content": "arw files",
+            "extensions": [
+                ".arw"
+            ]
+        },
+        {
+            "path": "Images/Cr2",
+            "content": "cr2 files",
+            "extensions": [
+                ".cr2"
+            ]
+        },
+        {
+            "path": "Images/Nrw",
+            "content": "nrw files",
+            "extensions": [
+                ".nrw"
+            ]
+        },
+        {
+            "path": "Images/K25",
+            "content": "k25 files",
+            "extensions": [
+                ".k25"
+            ]
+        },
+        {
+            "path": "Images/Bmp",
+            "content": "bmp files",
+            "extensions": [
+                ".bmp"
+            ]
+        },
+        {
+            "path": "Images/Dib",
+            "content": "dib files",
+            "extensions": [
+                ".dib"
+            ]
+        },
+        {
+            "path": "Vector_images/Svg",
+            "content": "svg files",
+            "extensions": [
+                ".svg"
+            ]
+        },
+        {
+            "path": "Vector_images/Svgz",
+            "content": "svgz files",
+            "extensions": [
+                ".svgz"
+            ]
+        },
+        {
+            "path": "Vector_images/Ai",
+            "content": "ai files",
+            "extensions": [
+                ".ai"
+            ]
+        },
+        {
+            "path": "Vector_images/Eps",
+            "content": "eps files",
+            "extensions": [
+                ".eps"
+            ]
+        },
+        {
+            "path": "Documents/Docx",
+            "content": "docx files",
+            "extensions": [
+                ".docx"
+            ]
+        },
+        {
+            "path": "Documents/Doc",
+            "content": "doc files",
+            "extensions": [
+                ".doc"
+            ]
+        },
+        {
+            "path": "Documents/Odt",
+            "content": "odt files",
+            "extensions": [
+                ".odt"
+            ]
+        },
+        {
+            "path": "Documents/Xls",
+            "content": "xls files",
+            "extensions": [
+                ".xls"
+            ]
+        },
+        {
+            "path": "Documents/Xlsx",
+            "content": "xlsx files",
+            "extensions": [
+                ".xlsx"
+            ]
+        },
+        {
+            "path": "Documents/Ods",
+            "content": "ods files",
+            "extensions": [
+                ".ods"
+            ]
+        },
+        {
+            "path": "Documents/Txt",
+            "content": "txt files",
+            "extensions": [
+                ".txt"
+            ]
+        },
+        {
+            "path": "Videos/Webm",
+            "content": "webm files",
+            "extensions": [
+                ".webm"
+            ]
+        },
+        {
+            "path": "Videos/Mpeg",
+            "content": "mpeg files",
+            "extensions": [
+                ".mpeg"
+            ]
+        },
+        {
+            "path": "Videos/Mov",
+            "content": "mov files",
+            "extensions": [
+                ".mov"
+            ]
+        },
+        {
+            "path": "Videos/Flv",
+            "content": "flv files",
+            "extensions": [
+                ".flv"
+            ]
+        },
+        {
+            "path": "Musics/Mp3",
+            "content": "mp3 files",
+            "extensions": [
+                ".mp3"
+            ]
+        },
+        {
+            "path": "Musics/Flac",
+            "content": "flac files",
+            "extensions": [
+                ".flac"
+            ]
+        },
+        {
+            "path": "Musics/Wma",
+            "content": "wma files",
+            "extensions": [
+                ".wma"
+            ]
+        },
+        {
+            "path": "Musics/Aac",
+            "content": "aac files",
+            "extensions": [
+                ".aac"
+            ]
+        },
+        {
+            "path": "Musics/Wav",
+            "content": "wav files",
+            "extensions": [
+                ".wav"
+            ]
+        }
+    ],
+    "mode": "modified"
+}

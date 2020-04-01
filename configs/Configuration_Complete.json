@@ -1,0 +1,187 @@
+{
+    "title": "Configuration Complete",
+    "comment": "All the differents types of files is moved to a different folder",
+    "folders": [
+        {
+            "path": "JPG",
+            "content": "jpg files",
+            "extensions": ".jpg"
+        },
+        {
+            "path": "JPEG",
+            "content": "jpeg files",
+            "extensions": ".jpeg"
+        },
+        {
+            "path": "JPE",
+            "content": "jpe files",
+            "extensions": ".jpe"
+        },
+        {
+            "path": "JIF",
+            "content": "jif files",
+            "extensions": ".jif"
+        },
+        {
+            "path": "JFIF",
+            "content": "jfif files",
+            "extensions": ".jfif"
+        },
+        {
+            "path": "JFI",
+            "content": "jfi files",
+            "extensions": ".jfi"
+        },
+        {
+            "path": "PNG",
+            "content": "png files",
+            "extensions": ".png"
+        },
+        {
+            "path": "GIF",
+            "content": "gif files",
+            "extensions": ".gif"
+        },
+        {
+            "path": "WEBP",
+            "content": "webp files",
+            "extensions": ".webp"
+        },
+        {
+            "path": "RAW",
+            "content": "raw files",
+            "extensions": ".raw"
+        },
+        {
+            "path": "ARW",
+            "content": "arw files",
+            "extensions": ".arw"
+        },
+        {
+            "path": "CR2",
+            "content": "cr2 files",
+            "extensions": ".cr2"
+        },
+        {
+            "path": "NRW",
+            "content": "nrw files",
+            "extensions": ".nrw"
+        },
+        {
+            "path": "K25",
+            "content": "k25 files",
+            "extensions": ".k25"
+        },
+        {
+            "path": "BMP",
+            "content": "bmp files",
+            "extensions": ".bmp"
+        },
+        {
+            "path": "DIB",
+            "content": "dib files",
+            "extensions": ".dib"
+        },
+        {
+            "path": "SVG",
+            "content": "svg files",
+            "extensions": ".svg"
+        },
+        {
+            "path": "SVGZ",
+            "content": "svgz files",
+            "extensions": ".svgz"
+        },
+        {
+            "path": "AI",
+            "content": "ai files",
+            "extensions": ".ai"
+        },
+        {
+            "path": "EPS",
+            "content": "eps files",
+            "extensions": ".eps"
+        },
+        {
+            "path": "DOCX",
+            "content": "docx files",
+            "extensions": ".docx"
+        },
+        {
+            "path": "DOC",
+            "content": "doc files",
+            "extensions": ".doc"
+        },
+        {
+            "path": "ODT",
+            "content": "odt files",
+            "extensions": ".odt"
+        },
+        {
+            "path": "XLS",
+            "content": "xls files",
+            "extensions": ".xls"
+        },
+        {
+            "path": "XLSX",
+            "content": "xlsx files",
+            "extensions": ".xlsx"
+        },
+        {
+            "path": "ODS",
+            "content": "ods files",
+            "extensions": ".ods"
+        },
+        {
+            "path": "TXT",
+            "content": "txt files",
+            "extensions": ".txt"
+        },
+        {
+            "path": "WEBM",
+            "content": "webm files",
+            "extensions": ".webm"
+        },
+        {
+            "path": "MPEG",
+            "content": "mpeg files",
+            "extensions": ".mpeg"
+        },
+        {
+            "path": "MOV",
+            "content": "mov files",
+            "extensions": ".mov"
+        },
+        {
+            "path": "FLV",
+            "content": "flv files",
+            "extensions": ".flv"
+        },
+        {
+            "path": "MP3",
+            "content": "mp3 files",
+            "extensions": ".mp3"
+        },
+        {
+            "path": "FLAC",
+            "content": "flac files",
+            "extensions": ".flac"
+        },
+        {
+            "path": "WMA",
+            "content": "wma files",
+            "extensions": ".wma"
+        },
+        {
+            "path": "AAC",
+            "content": "aac files",
+            "extensions": ".aac"
+        },
+        {
+            "path": "WAV",
+            "content": "wav files",
+            "extensions": ".wav"
+        }
+    ],
+    "mode": "modified"
+}
