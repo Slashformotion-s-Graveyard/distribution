@@ -5,8 +5,7 @@ import Config
 import Event_Handler
 import time
 import shutil
-from watchdog.observers import Observer  
-from watchdog.events import PatternMatchingEventHandler
+from watchdog.observers import Observer 
 
 config_folder = pl.Path("..") / pl.Path("configs")
 config_classic = config_folder / pl.Path("Configuration_Classic.json")
@@ -24,7 +23,7 @@ class Trieur():
         self._running = False
         Event_Handler.Handler.patterns = self.config.get_patterns()
         self.handler = Event_Handler.Handler()
-       
+        self.watch = None
 
 
     def start(self):
@@ -35,7 +34,7 @@ class Trieur():
 
         #update of the patterns and process
         self.handler.set_process(config = self.config, logger = self.logger, destination = self.destination)
-        self.observer.schedule(self.handler, str(origin.resolve()))
+        self.watch = self.observer.schedule(self.handler, str(origin.resolve()))
         self.config.deploy(self.destination)
 
         #start observer
@@ -45,8 +44,9 @@ class Trieur():
 
     def stop(self):
         self.observer.stop()
+        self.handler.unset_process()
         self.observer.join()
-        #self.observer.unschedule()
+        self.observer.unschedule_all()
         self.logger.debug("Distribution stopped")
 
     

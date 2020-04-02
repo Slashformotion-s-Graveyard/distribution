@@ -35,7 +35,13 @@ class Handler(PatternMatchingEventHandler):
         else :
             shutil.move(old_path,new_path) 
     
-    
+    def unset_process(self):
+        self.logger = None
+        self.config = None
+        self.destination = None
+
+
+
 
     def on_modified(self, event):
         print("Le fichier %s a été modifié" % event.src_path)
