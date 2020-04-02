@@ -17,6 +17,7 @@ class Config():
         self.folders= []
         self.title = ""
         self.comment = ""
+        self.modes = []
         self.raw_data = {}
 
         self.build()
@@ -27,6 +28,7 @@ class Config():
         self._load()
         self.title = self.raw_data['title']
         self.comment = self.raw_data['comment']
+        self.modes = self.raw_data["modes"]
         for l_folder in self.raw_data['folders']:
             self.folders.append(Folder.Folder(l_folder))
 
@@ -49,6 +51,25 @@ class Config():
 
     def get_patterns(self):
         return ["*" + ext for ext in self.get_exts()]
+    
+    def build_file_path(self, old_path, logger):
+        new_path = None
+        for folder in self.folders:
+            if old_path.suffix in folder.get_exts():
+                new_path = folder.get_path() / old_path.name
+        try :
+            assert new_path == None, f"File type is not supported by current config ({self.title})"
+        except AssertionError as error:
+            logger.warning(error)
+        else :
+            return new_path
+
+
+        
+        
+
+
+
         
     
 

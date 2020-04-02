@@ -4,6 +4,7 @@ import time
 import Config
 import Event_Handler
 import time
+import shutil
 from watchdog.observers import Observer  
 from watchdog.events import PatternMatchingEventHandler
 
@@ -23,7 +24,7 @@ class Trieur():
         self._running = False
         Event_Handler.Handler.patterns = self.config.get_patterns()
         self.handler = Event_Handler.Handler()
-        self.to_move = []  # list of path to move       
+       
 
 
     def start(self):
@@ -33,7 +34,6 @@ class Trieur():
             print("EROOR")
 
         #update of the patterns
-        
         self.observer.schedule(self.handler, str(origin.resolve()))
 
 
@@ -47,11 +47,21 @@ class Trieur():
         self.observer.join()
         self.logger.debug("Distribution stopped")
 
-    def move(self):
-        pass
-        
     
+    def move(self,event):
+        old_path = pl.Path(event.src_path)
+        new_path = self.destination / self.config.build_file_path(event, self.logger)
+        try:
+            assert not new_path.exists(), f"New path for file ({old_path.name}) already exist"
+        except AssertionError as error:
+            self.logger.warning(error)
+        else :
+            shutil.move(old_path,new_path) 
     
+
+
+
+
 if __name__ == "__main__":
     trieur = Trieur()
     trieur.start()
