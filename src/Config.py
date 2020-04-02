@@ -55,10 +55,10 @@ class Config():
     def build_file_path(self, old_path, logger):
         new_path = None
         for folder in self.folders:
-            if old_path.suffix in folder.get_exts():
+            if old_path.suffix in folder.get_extentions():
                 new_path = folder.get_path() / old_path.name
         try :
-            assert new_path == None, f"File type is not supported by current config ({self.title})"
+            assert new_path != None, f"File type is not supported by current config ({self.title})"
         except AssertionError as error:
             logger.warning(error)
         else :

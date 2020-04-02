@@ -183,5 +183,7 @@
             "extensions": ".wav"
         }
     ],
-    "mode": "modified"
+    "modes": [
+        "modified"
+    ]
 }

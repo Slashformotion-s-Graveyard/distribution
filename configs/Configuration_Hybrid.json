@@ -255,5 +255,7 @@
             ]
         }
     ],
-    "mode": "modified"
+    "modes": [
+        "modified"
+    ]
 }

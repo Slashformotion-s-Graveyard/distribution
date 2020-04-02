@@ -33,9 +33,10 @@ class Trieur():
             return False
             print("EROOR")
 
-        #update of the patterns
+        #update of the patterns and process
+        self.handler.set_process(config = self.config, logger = self.logger, destination = self.destination)
         self.observer.schedule(self.handler, str(origin.resolve()))
-
+        self.config.deploy(self.destination)
 
         #start observer
         self.observer.start()
@@ -45,6 +46,7 @@ class Trieur():
     def stop(self):
         self.observer.stop()
         self.observer.join()
+        #self.observer.unschedule()
         self.logger.debug("Distribution stopped")
 
     
@@ -65,5 +67,8 @@ class Trieur():
 if __name__ == "__main__":
     trieur = Trieur()
     trieur.start()
-    time.sleep(10)
-    trieur.stop()
+    try:
+        while 1:
+            time.sleep(0.0001)
+    except KeyboardInterrupt:
+        trieur.stop()
