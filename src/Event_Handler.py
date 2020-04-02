@@ -34,6 +34,7 @@ class Handler(PatternMatchingEventHandler):
             self.logger.warning(error)
         else :
             shutil.move(old_path,new_path) 
+            self.logger.info(f"File <{old_path.name}> was moved to {str(self.destination.resolve)}")
     
     def unset_process(self):
         self.logger = None
@@ -44,12 +45,14 @@ class Handler(PatternMatchingEventHandler):
 
 
     def on_modified(self, event):
-        print("Le fichier %s a été modifié" % event.src_path)
-        self.process(event)
+        #print("Le fichier %s a été modifié" % event.src_path)
+        self.process(event)#
 
     def on_created(self,event):
-        print("Le fichier %s a été créé" % event.src_path)
+        #print("Le fichier %s a été créé" % event.src_path)
+        pass
     def on_deleted(self,event):
-        print("Le fichier %s a été supprimé" % event.src_path)
+        #print("Le fichier %s a été supprimé" % event.src_path)
+        pass
 
     
