@@ -26,12 +26,6 @@ class Trieur():
         self.watch = None
 
 
-    @property
-    def running(self):
-        return self.running
-
- 
-
     def start(self):
        #check destination and origin
         if not self.origin.exists() or not self.origin.is_dir() or not self.destination.exists() or not self.destination.is_dir() :
